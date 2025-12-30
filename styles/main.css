@@ -500,21 +500,29 @@ section::before {
     content: attr(data-section-title);
     position: absolute;
     top: 10px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 10rem;
     font-weight: var(--font-weight-extra-bold);
     color: var(--color-text-faded);
-    opacity: 0.35;
+    opacity: 0.25;
     text-transform: lowercase;
     line-height: 1;
     pointer-events: none;
     z-index: 0;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    max-width: var(--max-width-content);
 }
 
 /* Content wrapper - higher z-index */
 .section-content {
     position: relative;
     z-index: 1;
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* ============================================
@@ -530,14 +538,28 @@ section::before {
     color: var(--color-text-primary);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-xl);
-    max-width: 800px;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-heading {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-lg);
+    margin-top: var(--space-xl);
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .timeline {
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
-    max-width: 800px;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .timeline-item {
@@ -577,12 +599,19 @@ section::before {
     font-size: var(--font-size-sm);
     color: var(--color-text-primary);
     margin-bottom: var(--space-xl);
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -686,6 +715,8 @@ section::before {
     grid-template-columns: auto 1fr;
     gap: var(--space-xl);
     align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .contact-image {
@@ -696,7 +727,8 @@ section::before {
 }
 
 .contact-info {
-    max-width: 500px;
+    max-width: none;
+    flex: 1;
 }
 
 .contact-text {
@@ -704,6 +736,9 @@ section::before {
     color: var(--color-text-primary);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-md);
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .contact-links {
@@ -748,7 +783,8 @@ section::before {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--space-lg);
-    max-width: 1200px;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .skill-item {
@@ -788,11 +824,13 @@ section::before {
     padding-top: 160px;
 }
 
+
 .help-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-lg);
-    max-width: 1200px;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .help-item {
@@ -835,7 +873,8 @@ section::before {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-lg);
-    max-width: 1200px;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .achievement-item {
@@ -893,6 +932,7 @@ section::before {
     gap: var(--space-xl);
     max-width: 800px;
     position: relative;
+    margin: 0 auto;
 }
 
 .activity-timeline::before {
