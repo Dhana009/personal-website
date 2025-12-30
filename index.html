@@ -8,6 +8,22 @@
     content="Dhanunjaya - QA Automation Engineer specializing in test automation, API testing, and quality engineering.">
   <title>Dhanunjaya | QA Automation Engineer</title>
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dhanunjaya.dev/">
+  <meta property="og:title" content="Dhanunjaya | QA Automation Engineer">
+  <meta property="og:description"
+    content="QA Automation Engineer (SDET-1) specializing in test automation, API testing, and quality engineering.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dhanunjaya.dev/">
+  <meta property="twitter:title" content="Dhanunjaya | QA Automation Engineer">
+  <meta property="twitter:description"
+    content="QA Automation Engineer (SDET-1) specializing in test automation, API testing, and quality engineering.">
+  <meta property="twitter:image" content="assets/profile.jpg">
+
   <!-- Google Fonts - Poppins (from Figma spec) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +34,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles/tokens.css">
   <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 
 <body>
@@ -25,26 +44,51 @@
   <!-- Header with Navigation - Matching Figma -->
   <header class="header">
     <div class="header-content">
-      <a href="#" class="logo">M Dhanunjaya</a>
+      <div class="logo-container">
+        <a href="#home" class="logo">M Dhanunjaya</a>
+        <div class="availability-badge">Open to Work</div>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
       <nav class="nav-menu">
         <a href="#home" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
         <a href="#work" class="nav-link">Work</a>
         <a href="#personal-work" class="nav-link">Personal</a>
-        <a href="#projects" class="nav-link">Projects</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
-      <div class="social-icons">
-        <a href="https://linkedin.com/in/dhanunjayam/" target="_blank" rel="noopener" class="social-icon"
-          title="LinkedIn">in</a>
-        <a href="https://github.com/Dhana009" target="_blank" rel="noopener" class="social-icon" title="GitHub">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+      <div class="header-right">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="header-resume-btn" title="Download Resume">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
           </svg>
+          <span>Resume</span>
         </a>
+        <div class="social-icons">
+          <a href="mailto:tvsdhanan009@gmail.com" class="social-icon" title="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/dhanunjayam/" target="_blank" rel="noopener" class="social-icon"
+            title="LinkedIn">in</a>
+          <a href="https://github.com/Dhana009" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -55,7 +99,11 @@
       <p class="hero-intro">Hello, I'm Dhanunjaya,</p>
       <h1>QA Automation<br>Engineer</h1>
       <p class="hero-subtitle">based in India.</p>
-      <a href="assets/resume.pdf" download class="resume-btn">Resume</a>
+      <p class="hero-tagline">Building reliable test automation frameworks and ensuring software quality through systematic testing approaches. Specializing in API testing, web automation, and CI/CD integration.</p>
+      <div class="hero-cta">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="resume-btn">View Resume</a>
+        <a href="https://calendar.app.google/VajKN2ts1nEBF61Y6" target="_blank" rel="noopener" class="calendar-btn">Schedule a Call</a>
+      </div>
     </div>
 
     <!-- Nested Oval Profile Photo Structure -->
@@ -86,6 +134,37 @@
         I enjoy understanding how systems behave under different conditions and how automation helps make testing
         more scalable and efficient. I value collaboration, knowledge sharing, and working closely with developers
         and product teams to deliver high-quality software.
+        <br><br>
+        <strong>The Temple Road Development Initiative - A Divine Calling</strong>
+        <br><br>
+        Beyond my professional work, I'm deeply passionate about community service and faith-driven initiatives. In 2021,
+        with Lord Shiva's blessings, I embarked on a sacred mission to make the Sri Amara Lingeshwara Swamy Kona temple
+        in Tirupati accessible to devotees. Despite having no prior experience in construction or road building, and
+        coming from an Aeronautical Engineering background, I felt divinely guided to take on this monumental task.
+        <br><br>
+        The temple, located deep in the forest, was nearly inaccessible. The path was treacherous—covered with uneven
+        stones, sharp turns, and dangerous slopes. During monsoons, heavy water flow would completely block the route,
+        making it impossible for devotees to reach the sacred site. People would slip and fall on the rocky terrain, and
+        vehicles couldn't pass through the narrow, stone-filled path.
+        <br><br>
+        Over two years (2021-2023), working alone with unwavering faith in Lord Shiva, I built cement steps by carrying
+        200 sand bags half a kilometer into the forest over three months, sometimes using my bike. With no construction
+        experience, I learned as I worked, completing safe cement steps in just five days. After heavy rains created a
+        massive hole and redirected water flow, I spent two months carrying stones weighing half a ton each from distant
+        places, building a bridge that allows both foot traffic and vehicles while maintaining natural water flow. I
+        cleared dense vegetation, removed countless stones, redirected dangerous water channels, and filled deep holes,
+        transforming a narrow, single-person trail into a wide, safe pathway by pouring red soil over the cleared route.
+        On the auspicious day of Varalakshmi Vratham (August 20, 2021), I performed Bhoomi Pooja with fellow devotees to
+        seek blessings before beginning the work.
+        <br><br>
+        What was once a dangerous, nearly impassable route is now a clear, safe road. Devotees can now reach the temple
+        confidently, without fear of slipping, falling, or being blocked by water. The project includes the development
+        of multiple temple sites including Rama Lingeshwara Temple and Kamakshi Amma Temple.
+        <br><br>
+        This experience taught me that with faith, determination, and divine guidance, even someone with no experience
+        can accomplish the impossible. It reinforced the importance of perseverance, community service, and giving back.
+        Every stone I moved, every step I built, was a lesson in project management, problem-solving, and the power of
+        unwavering commitment to a cause greater than oneself.
       </div>
 
       <div class="timeline">
@@ -128,6 +207,191 @@
     </div>
   </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="skills" data-section-title="skills.">
+    <div class="section-content">
+      <div class="work-intro">
+        Core skills and expertise developed through professional experience.
+      </div>
+
+      <div class="skills-list">
+        <div class="skill-item">
+          <h3 class="skill-name">QA Automation</h3>
+          <p class="skill-context">QA Automation Engineer (SDET-1) at SproutsAI • Flow Hub – API Automation & Testing Project</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Test Automation</h3>
+          <p class="skill-context">QA Automation Engineer (SDET-1) at SproutsAI • Flow Hub – API Automation & Testing Project</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">API Testing</h3>
+          <p class="skill-context">QA Automation Engineer (SDET-1) at SproutsAI • Flow Hub – API Automation & Testing Project</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Continuous Integration and Continuous Delivery (CI/CD)</h3>
+          <p class="skill-context">QA Automation Engineer (SDET-1) at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Manual Testing</h3>
+          <p class="skill-context">Manual Tester at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Functional Testing</h3>
+          <p class="skill-context">Manual Tester at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Regression Testing</h3>
+          <p class="skill-context">Manual Tester at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Exploratory Testing</h3>
+          <p class="skill-context">Manual Tester at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Test Case Design</h3>
+          <p class="skill-context">Manual Tester at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Defect Tracking</h3>
+          <p class="skill-context">Manual Tester at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Software Quality</h3>
+          <p class="skill-context">2 experiences at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Software Development Life Cycle (SDLC)</h3>
+          <p class="skill-context">Manual Tester at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Agile Methodology</h3>
+          <p class="skill-context">Manual Tester at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Startup Environments</h3>
+          <p class="skill-context">2 experiences at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">API Automation</h3>
+          <p class="skill-context">QA Automation Engineer (SDET-1) at SproutsAI</p>
+        </div>
+
+        <div class="skill-item">
+          <h3 class="skill-name">Playwright</h3>
+          <p class="skill-context">Flow Hub – API Automation & Testing Project</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Can Help With Section -->
+  <section id="help" class="help" data-section-title="services.">
+    <div class="section-content">
+      <div class="work-intro">
+        How I can help solve your quality engineering challenges.
+      </div>
+
+      <div class="help-grid">
+        <div class="help-item">
+          <h3 class="help-title">Test Automation Strategy</h3>
+          <p class="help-description">
+            Design and implement comprehensive test automation frameworks that scale with your product. 
+            Reduce manual testing effort and improve release confidence through strategic automation.
+          </p>
+        </div>
+
+        <div class="help-item">
+          <h3 class="help-title">API Testing & Validation</h3>
+          <p class="help-description">
+            Build robust API test suites to validate contracts, data integrity, and edge cases. 
+            Ensure reliable backend services through systematic API testing approaches.
+          </p>
+        </div>
+
+        <div class="help-item">
+          <h3 class="help-title">CI/CD Integration</h3>
+          <p class="help-description">
+            Integrate automated tests into your CI/CD pipelines for continuous quality assurance. 
+            Catch issues early and enable faster, more reliable deployments.
+          </p>
+        </div>
+
+        <div class="help-item">
+          <h3 class="help-title">Quality Process Improvement</h3>
+          <p class="help-description">
+            Analyze existing testing processes and identify opportunities for improvement. 
+            Implement best practices, reduce flaky tests, and enhance overall quality metrics.
+          </p>
+        </div>
+
+        <div class="help-item">
+          <h3 class="help-title">Test Framework Development</h3>
+          <p class="help-description">
+            Create maintainable, reusable test automation frameworks using Python, Playwright, and modern tools. 
+            Build solutions that your team can easily extend and maintain.
+          </p>
+        </div>
+
+        <div class="help-item">
+          <h3 class="help-title">Manual Testing Excellence</h3>
+          <p class="help-description">
+            Design comprehensive test cases, perform exploratory testing, and ensure thorough coverage. 
+            Bridge the gap between manual and automated testing for complete quality assurance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Achievements Section -->
+  <section id="achievements" class="achievements" data-section-title="impact.">
+    <div class="section-content">
+      <div class="work-intro">
+        Measurable impact and achievements.
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-item">
+          <div class="achievement-number">2+</div>
+          <div class="achievement-label">Years Experience</div>
+          <div class="achievement-detail">QA Automation & Manual Testing</div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-number">100+</div>
+          <div class="achievement-label">Test Cases Automated</div>
+          <div class="achievement-detail">Web & API Test Scenarios</div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-number">CI/CD</div>
+          <div class="achievement-label">Pipeline Integration</div>
+          <div class="achievement-detail">Continuous Testing Enabled</div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-number">1</div>
+          <div class="achievement-label">Major Projects</div>
+          <div class="achievement-detail">Flow Hub</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Work Section with Content Wrapper -->
   <section id="work" class="work" data-section-title="work.">
     <div class="section-content">
@@ -138,7 +402,7 @@
       <div id="projects" class="projects-grid">
         <!-- Flow Hub Project -->
         <article class="project-card">
-          <img src="assets/project-placeholder.jpg" alt="Flow Hub API Testing" class="project-image">
+          <img src="assets/flowhub-project.jpg" alt="Flow Hub API Testing" class="project-image" loading="lazy">
           <div class="project-info">
             <p class="project-date">November 2025</p>
             <h3 class="project-title">Flow Hub – API Automation & Testing Project</h3>
@@ -147,6 +411,9 @@
               Designed API contracts, request/response schemas, and frontend-backend interactions.
               Validated API behavior, data integrity, and edge cases while practicing automation scenarios.
             </p>
+            <div class="project-impact">
+              <strong>Impact:</strong> Comprehensive API test coverage, improved understanding of contract testing, and hands-on experience with automation frameworks.
+            </div>
             <a href="https://github.com/Dhana009/FlowHub/tree/flowhub-core-dev" target="_blank" rel="noopener"
               class="project-link">View on GitHub →</a>
           </div>
@@ -154,7 +421,7 @@
 
         <!-- Python Automation Framework -->
         <article class="project-card">
-          <img src="assets/project-placeholder.jpg" alt="Test Automation Framework" class="project-image">
+          <img src="assets/automation-framework.jpg" alt="Test Automation Framework" class="project-image" loading="lazy">
           <div class="project-info">
             <p class="project-date">2024</p>
             <h3 class="project-title">Python Web Automation Framework</h3>
@@ -163,6 +430,9 @@
               page object models, and integrated with CI/CD pipelines for continuous testing and improved test
               reliability.
             </p>
+            <div class="project-impact">
+              <strong>Impact:</strong> Reduced manual testing effort, enabled faster release cycles, and improved test reliability through systematic automation.
+            </div>
           </div>
         </article>
       </div>
@@ -179,7 +449,7 @@
       <div class="projects-grid">
         <!-- Temple Project - Your Main Work -->
         <article class="project-card">
-          <img src="assets/project-placeholder.jpg" alt="Sri Amara Lingeshwara Swamy Temple" class="project-image">
+          <img src="assets/temple-road.jpg" alt="Sri Amara Lingeshwara Swamy Temple" class="project-image" loading="lazy">
           <div class="project-info">
             <p class="project-date">2021 - 2023</p>
             <h3 class="project-title">Temple Road Development Initiative</h3>
@@ -189,29 +459,18 @@
               Took complete responsibility for planning and execution with Lord Shiva's blessings, making the temple
               accessible to devotees.
             </p>
+            <div class="project-impact">
+              <strong>Impact:</strong> Transformed an inaccessible path into a safe, usable road, enabling hundreds of devotees to visit the temple safely. Demonstrated project management, perseverance, and community service.
+            </div>
             <a href="https://www.sriamaralingeshwaraswamykona.in/" target="_blank" rel="noopener"
-              class="project-link">Visit Temple Website →</a>
+              class="temple-btn">Visit Temple Website →</a>
           </div>
         </article>
 
-        <!-- Placeholder Project 1 -->
-        <article class="project-card">
-          <img src="assets/project-placeholder.jpg" alt="Learning Documentation" class="project-image">
-          <div class="project-info">
-            <p class="project-date">Ongoing</p>
-            <h3 class="project-title">QA Learning Documentation</h3>
-            <p class="project-description">
-              Actively documenting testing concepts, automation patterns, and best practices on GitHub.
-              Creating resources to help others learn QA automation and modern testing frameworks.
-            </p>
-            <a href="https://github.com/Dhana009" target="_blank" rel="noopener" class="project-link">View GitHub
-              Profile →</a>
-          </div>
-        </article>
-
+        
         <!-- Placeholder Project 2 -->
         <article class="project-card">
-          <img src="assets/project-placeholder.jpg" alt="Continuous Learning" class="project-image">
+          <img src="assets/skills-development.jpg" alt="Continuous Learning" class="project-image" loading="lazy">
           <div class="project-info">
             <p class="project-date">2023 - Present</p>
             <h3 class="project-title">Skills Development Journey</h3>
@@ -224,7 +483,7 @@
 
         <!-- Placeholder Project 3 -->
         <article class="project-card">
-          <img src="assets/project-placeholder.jpg" alt="Knowledge Sharing" class="project-image">
+          <img src="assets/community-engagement.jpg" alt="Knowledge Sharing" class="project-image" loading="lazy">
           <div class="project-info">
             <p class="project-date">Ongoing</p>
             <h3 class="project-title">Testing Community Engagement</h3>
@@ -238,26 +497,105 @@
     </div>
   </section>
 
-  <!-- Contact Section with Content Wrapper -->
-  <section id="contact" class="contact" data-section-title="contact.">
+  <!-- Recent Activity Section -->
+  <section id="activity" class="activity" data-section-title="updates.">
     <div class="section-content">
-      <div class="contact-content">
-        <img src="assets/project-placeholder.jpg" alt="Contact" class="contact-image">
-        <div class="contact-info">
-          <p class="contact-text">
-            I'm always interested in discussing test automation, quality engineering, or potential opportunities.
-            Feel free to reach out through any of the channels below.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:tvsdhanan009@gmail.com" class="contact-link">tvsdhanan009@gmail.com</a>
-            <a href="tel:+919789070869" class="contact-link">+91 9789070869</a>
-            <a href="https://linkedin.com/in/dhanunjayam/" target="_blank" rel="noopener" class="contact-link">LinkedIn
-              Profile</a>
+      <div class="work-intro">
+        Recent work and continuous learning.
+      </div>
+
+      <div class="activity-timeline">
+        <div class="activity-item">
+          <div class="activity-date">2024 - Present</div>
+          <div class="activity-content">
+            <h3 class="activity-title">QA Automation Engineer at SproutsAI</h3>
+            <p class="activity-description">
+              Automating web and API test scenarios, contributing to automation frameworks, and supporting CI/CD pipelines. 
+              Continuously improving test coverage and reliability.
+            </p>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-date">November 2024</div>
+          <div class="activity-content">
+            <h3 class="activity-title">Flow Hub API Testing Project</h3>
+            <p class="activity-description">
+              Completed end-to-end API automation project, strengthening understanding of API testing, contract validation, 
+              and automation frameworks.
+            </p>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-date">Ongoing</div>
+          <div class="activity-content">
+            <h3 class="activity-title">Continuous Learning & Skill Development</h3>
+            <p class="activity-description">
+              Actively upskilling in Python, Playwright, API testing, and exploring AI-assisted testing tools. 
+              Documenting learnings and best practices.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Contact Section with Content Wrapper -->
+  <section id="contact" class="contact" data-section-title="contact.">
+    <div class="section-content">
+      <div class="contact-content">
+        <img src="assets/contact-image.jpg" alt="Contact" class="contact-image" loading="lazy">
+        <div class="contact-info">
+          <p class="contact-text">
+            Let's discuss how I can help improve your testing processes, automate workflows, or solve quality engineering challenges.
+            Reach out through any of the channels below.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:tvsdhanan009@gmail.com" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>tvsdhanan009@gmail.com</span>
+            </a>
+            <a href="tel:+919789070869" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+91 9789070869</span>
+            </a>
+            <a href="https://linkedin.com/in/dhanunjayam" target="_blank" rel="noopener" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>linkedin.com/in/dhanunjayam</span>
+            </a>
+          </div>
+          <a href="https://calendar.app.google/VajKN2ts1nEBF61Y6" target="_blank" rel="noopener" class="calendar-btn-contact">Schedule a Call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">© 2024 M Dhanunjaya. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/dhanunjayam" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/Dhana009" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+        <a href="mailto:tvsdhanan009@gmail.com" class="footer-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"></path>
+    </svg>
+  </button>
 
   <!-- Scripts -->
   <script src="scripts/main.js"></script>

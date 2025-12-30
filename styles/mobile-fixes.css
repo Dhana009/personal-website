@@ -1,0 +1,207 @@
+/* Mobile Responsive Improvements for iPhone 14 Pro Max (430px) */
+
+@media (max-width: 768px) {
+
+    /* Mobile Menu Styles */
+    .mobile-menu-toggle {
+        display: flex;
+        order: 3;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 65px;
+        left: 0;
+        right: 0;
+        background-color: var(--color-bg-primary);
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr auto;
+    }
+
+    .header-right {
+        order: 2;
+    }
+
+    .logo-container {
+        order: 1;
+    }
+
+    /* Hero Section Fixes */
+    .hero {
+        padding: 2rem 1.5rem !important;
+        min-height: auto !important;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 42px !important;
+        line-height: 1.1 !important;
+        margin-bottom: 1rem !important;
+        word-wrap: break-word;
+    }
+
+    .hero-intro {
+        font-size: 16px !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 16px !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .hero-tagline {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+        color: var(--color-text-primary) !important;
+        opacity: 0.9;
+    }
+
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .resume-btn,
+    .calendar-btn {
+        padding: 1rem 2rem !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        width: 100% !important;
+        text-align: center !important;
+        display: block !important;
+    }
+
+    .resume-btn {
+        background-color: var(--color-accent) !important;
+        color: var(--color-text-primary) !important;
+        border: 2px solid var(--color-border) !important;
+    }
+
+    .calendar-btn {
+        background-color: transparent !important;
+        color: var(--color-text-primary) !important;
+        border: 2px solid var(--color-text-primary) !important;
+    }
+
+    /* Profile Image Fixes */
+    .profile-container {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+
+    .profile-outer-ring {
+        width: 300px !important;
+        height: 320px !important;
+        margin: 0 auto !important;
+    }
+
+    .profile-inner-ring {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .profile-photo {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}
+
+/* Improved styles for very small screens (430px and below) */
+@media (max-width: 480px) {
+
+    /* Better spacing and sizing */
+    .header {
+        padding: 0.75rem 1rem !important;
+    }
+
+    body {
+        padding-top: 65px !important;
+    }
+
+    section {
+        padding: 3rem 1.5rem 2rem !important;
+    }
+
+    section::before {
+        font-size: 2.5rem !important;
+        opacity: 0.2 !important;
+    }
+
+    .about-text {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .about-text strong {
+        font-size: 17px !important;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-year {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .timeline-content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    .project-title {
+        font-size: 20px !important;
+    }
+
+    .project-description {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
+
+    .project-image {
+        height: 200px !important;
+    }
+
+    .contact-link {
+        font-size: 14px !important;
+        padding: 0.75rem 0 !important;
+    }
+
+    .work-intro {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
+}
