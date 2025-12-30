@@ -101,9 +101,13 @@ body {
     position: relative;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
     color: var(--color-accent);
+}
+
+.nav-link.active {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-semibold);
 }
 
 .nav-link.active::after {
@@ -411,6 +415,11 @@ body {
     position: relative;
     width: 506px;
     height: 509px;
+}
+
+/* Hide mobile profile container on desktop */
+.profile-container-mobile {
+    display: none;
 }
 
 /* Outer stroke container - Dark Brown border */
@@ -844,12 +853,17 @@ section::before {
     box-shadow: var(--shadow-md);
 }
 
+.achievement-item:hover .achievement-number {
+    transform: scale(1.1);
+}
+
 .achievement-number {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-extra-bold);
     color: var(--color-accent);
     margin-bottom: var(--space-xs);
     line-height: 1.2;
+    transition: transform var(--transition-base);
 }
 
 .achievement-label {
@@ -1018,6 +1032,11 @@ section::before {
 .scroll-to-top svg {
     width: 20px;
     height: 20px;
+}
+
+/* Mobile Floating Contact Button - Hidden on desktop */
+.mobile-contact-fab {
+    display: none;
 }
 
 /* ============================================
