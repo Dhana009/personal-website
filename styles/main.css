@@ -1,0 +1,544 @@
+/* Main Styles - Figma Minimalist Portfolio */
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   HEADER - Fixed to Viewport
+   ============================================ */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: var(--space-sm) var(--space-xl);
+    background-color: var(--color-bg-primary);
+    z-index: 100;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+/* Push body content below fixed header */
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 80px;
+}
+
+.logo {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    justify-self: start;
+}
+
+/* Center Navigation */
+.nav-menu {
+    display: flex;
+    gap: var(--space-md);
+    justify-self: center;
+}
+
+.nav-link {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+    transition: color var(--transition-base);
+}
+
+.nav-link:hover {
+    color: var(--color-accent);
+}
+
+/* Right Social Icons */
+.social-icons {
+    display: flex;
+    gap: var(--space-sm);
+    justify-self: end;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: var(--font-weight-semibold);
+    transition: color var(--transition-base);
+}
+
+.social-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.social-icon:hover {
+    color: var(--color-accent);
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-lg) var(--space-2xl);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-xl);
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+/* NO ANIMATIONS - Hero elements are static */
+.hero-intro {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xs);
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+.hero-content h1 {
+    font-size: var(--font-size-hero);
+    font-weight: var(--font-weight-extra-bold);
+    line-height: var(--line-height-heading);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.02em;
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: var(--space-lg);
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+    border: 2px solid var(--color-accent);
+}
+
+.resume-btn:hover {
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+}
+
+/* ============================================
+   PROFILE PHOTO - Exact Figma Asymmetric Geometry
+   ============================================ */
+
+.profile-container {
+    position: relative;
+    width: 506px;
+    height: 509px;
+}
+
+/* Outer stroke container - Dark Brown border */
+.profile-outer-ring {
+    position: absolute;
+    left: 0%;
+    right: 2.57%;
+    top: 3.14%;
+    bottom: 0%;
+    border: 1px solid var(--color-border);
+    /* #474306 */
+    border-radius: 50%;
+}
+
+/* Mask container - Asymmetric offset from Figma */
+.profile-inner-ring {
+    position: absolute;
+    left: 2.57%;
+    right: 0%;
+    top: 0%;
+    bottom: 3.14%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #000000;
+}
+
+/* Image - Full view without crop */
+.profile-photo {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Show full image without cropping */
+    object-position: center;
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+/* Decorative elements - absolutely positioned */
+.profile-slashes {
+    position: absolute;
+    bottom: 12%;
+    right: -30px;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    letter-spacing: 2px;
+}
+
+.profile-plus {
+    position: absolute;
+    top: 5%;
+    right: -20px;
+    font-size: 2.5rem;
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+/* ============================================
+   SECTIONS - Hard Boundary, No Overlap
+   ============================================ */
+
+section {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: 160px var(--space-lg) 120px;
+    position: relative;
+    /* Hard boundary - sections cannot overlap hero */
+}
+
+/* Background decorative text - stays at top */
+section::before {
+    content: attr(data-section-title);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 10rem;
+    font-weight: var(--font-weight-extra-bold);
+    color: var(--color-text-faded);
+    opacity: 0.35;
+    text-transform: lowercase;
+    line-height: 1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Content wrapper - higher z-index */
+.section-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
+.about {
+    padding-top: 160px;
+}
+
+.about-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-xl);
+    max-width: 800px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 800px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-md);
+    align-items: start;
+}
+
+.timeline-bullet {
+    font-size: 0.5rem;
+    color: var(--color-text-primary);
+    margin-top: 0.4rem;
+}
+
+.timeline-content {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-relaxed);
+}
+
+.timeline-year {
+    display: block;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-xs);
+}
+
+/* ============================================
+   WORK/PROJECTS SECTION
+   ============================================ */
+
+.work {
+    padding-top: 160px;
+}
+
+.work-intro {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xl);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.project-card {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.project-info {
+    padding: var(--space-sm) 0;
+}
+
+.project-date {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.project-title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.project-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-relaxed);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: var(--space-sm);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+    transform: translateX(4px);
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+.contact {
+    padding-top: 160px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.contact-image {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+}
+
+.contact-info {
+    max-width: 500px;
+}
+
+.contact-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-md);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.contact-link {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-base);
+}
+
+.contact-link:hover {
+    color: var(--color-accent);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .header-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--space-sm);
+    }
+
+    .logo {
+        justify-self: center;
+    }
+
+    .nav-menu {
+        justify-self: center;
+    }
+
+    .social-icons {
+        justify-self: center;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--space-lg);
+    }
+
+    .hero-content h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    .profile-outer-ring {
+        margin: 0 auto;
+        width: 320px;
+        height: 350px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section::before {
+        font-size: 6rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .contact-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    section {
+        padding: 120px var(--space-md) 80px;
+    }
+
+    .hero {
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .hero-content h1 {
+        font-size: var(--font-size-lg);
+    }
+
+    section::before {
+        font-size: 4rem;
+        top: 5px;
+    }
+
+    .profile-outer-ring {
+        width: 280px;
+        height: 310px;
+    }
+}

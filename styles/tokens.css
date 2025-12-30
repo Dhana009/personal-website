@@ -1,0 +1,91 @@
+/* Design Tokens - Exact Figma Specification */
+
+:root {
+    /* Colors - Exact from Figma */
+    --color-bg-primary: #FFF9E5;
+    --color-bg-secondary: #FFF5D6;
+    --color-bg-card: #FFFFFF;
+
+    --color-text-primary: #03045E;
+    /* Dark Blue - Figma exact */
+    --color-text-secondary: #4A5568;
+    --color-text-light: #6B7280;
+    --color-text-faded: #F7F197;
+    /* Too Light Yellow - section backgrounds from Figma */
+
+    --color-accent: #F5EE84;
+    /* Yellow - Figma exact */
+    --color-accent-hover: #E8DC6E;
+    --color-border: #474306;
+    /* Dark Brown - Figma exact */
+
+    /* Typography - Exact from Figma */
+    --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+
+    --font-size-hero: 100px;
+    /* Product Designer - Figma spec */
+    --font-size-section-bg: 100px;
+    /* about., work., contact. - Figma spec */
+    --font-size-xl: 64px;
+    --font-size-lg: 48px;
+    --font-size-md: 28px;
+    /* Hello/based in - Figma spec */
+    --font-size-base: 24px;
+    /* Body text - Figma spec */
+    --font-size-sm: 18px;
+    /* Navigation - Figma spec */
+    --font-size-xs: 15px;
+    /* Date - Figma spec */
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+
+    --line-height-base: 1.5;
+    --line-height-heading: 1.16;
+    /* Figma: 116px/100px */
+    --line-height-relaxed: 1.83;
+    /* Figma: 44px/24px */
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
+
+    /* Layout */
+    --max-width-content: 1440px;
+    /* Figma canvas width */
+    --max-width-text: 900px;
+    /* Figma content width */
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    /* Figma spec */
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 50%;
+
+    /* Transitions */
+    --transition-base: 0.25s ease;
+
+    /* Responsive Breakpoints */
+    --breakpoint-mobile: 375px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1024px;
+    --breakpoint-wide: 1440px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.25s ease;
+    --transition-slow: 0.4s ease;
+}
