@@ -40,6 +40,49 @@
         margin-right: 0 !important;
     }
 
+    /* Logo container: Prevent name wrapping on small screens */
+    .logo-container {
+        flex-shrink: 1 !important;
+        min-width: 0 !important;
+        gap: 0.5rem !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .logo {
+        font-size: 14px !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        flex-shrink: 1 !important;
+        min-width: 0 !important;
+    }
+
+    .availability-badge {
+        flex-shrink: 0 !important;
+        white-space: nowrap !important;
+        font-size: 10px !important;
+        padding: 0.3rem 0.7rem !important;
+        letter-spacing: 0.6px !important;
+    }
+
+    /* Extra small screens (390px and below) - Further optimize header */
+    @media (max-width: 390px) {
+        .logo {
+            font-size: 13px !important;
+        }
+
+        .availability-badge {
+            font-size: 9px !important;
+            padding: 0.25rem 0.6rem !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        .logo-container {
+            gap: 0.4rem !important;
+        }
+    }
+
     /* Hero: Use mobile gutter, remove desktop centering */
     .hero {
         max-width: none !important;
